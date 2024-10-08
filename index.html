@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bundelkhand Tourism Gallery</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Explore Bundelkhand's Rich Heritage</h1>
+  <p>Click on any image below to view it in full screen with additional details about the wonders of Bundelkhand!</p>
+
+  <div class="gallery">
+    <div class="gallery-item-container">
+      <img src="images/khajuraho.avif" class="gallery-item" alt="Khajuraho Temples" onclick="openModal();currentSlide(1)">
+      <div class="overlay">Khajuraho Temples</div>
+    </div>
+    <div class="gallery-item-container">
+      <img src="images/orchha.avif" class="gallery-item" alt="Orchha Fort" onclick="openModal();currentSlide(2)">
+      <div class="overlay">Orchha Fort</div>
+    </div>
+    <div class="gallery-item-container">
+      <img src="images/jhansi.avif" class="gallery-item" alt="Jhansi Fort" onclick="openModal();currentSlide(3)">
+      <div class="overlay">Jhansi Fort</div>
+    </div>
+    <div class="gallery-item-container">
+      <img src="images/panna.avif" class="gallery-item" alt="Panna National Park" onclick="openModal();currentSlide(4)">
+      <div class="overlay">Panna National Park</div>
+    </div>
+    <div class="gallery-item-container">
+      <img src="images/chitrakoot.avif" class="gallery-item" alt="Chitrakoot" onclick="openModal();currentSlide(5)">
+      <div class="overlay">Chitrakoot</div>
+    </div>
+  </div>
+
+  <!-- Modal for fullscreen images -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/khajuraho.avif" class="modal-img" alt="Khajuraho Temples">
+        <div class="caption">Khajuraho Temples: World-famous for their stunningly intricate and erotic sculptures, these temples are a UNESCO World Heritage Site.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/orchha.avif" class="modal-img" alt="Orchha Fort">
+        <div class="caption">Orchha Fort: A historical marvel, this fort complex showcases grand palaces, temples, and cenotaphs that reflect Bundelkhand's royal legacy.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/jhansi.avif" class="modal-img" alt="Jhansi Fort">
+        <div class="caption">Jhansi Fort: This iconic fort stands as a symbol of resistance and valor, famously associated with the brave Rani Lakshmibai.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/panna.avif" class="modal-img" alt="Panna National Park">
+        <div class="caption">Panna National Park: A wildlife haven, known for its tigers, leopards, and vibrant birdlife, located along the Ken River.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/chitrakoot.avif" class="modal-img" alt="Chitrakoot">
+        <div class="caption">Chitrakoot: A spiritual destination rich in mythology, with sacred rivers, hills, and ancient temples.</div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
